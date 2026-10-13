@@ -4,8 +4,13 @@
 name: Cars CRUD Tests
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  # Lets you start a run by hand from the Actions tab. It only appears once
+  # this file exists on the default branch (main).
+  workflow_dispatch:
 
 permissions:
   contents: read
